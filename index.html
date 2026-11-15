@@ -3,337 +3,184 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodrigues Matheus — Sistemas Embarcados, Robótica e Multi-Agentes</title>
-  <meta name="description" content="Portfólio técnico de Rodrigues Matheus: Engenharia de Computação (IFPB), Sistemas Embarcados Bare-Metal (STM32), Robótica (Laboratório Hórus), Interagi Tecnologia e Sistemas Multi-Agentes." />
-  <meta property="og:title" content="Rodrigues Matheus — Portfólio Técnico" />
-  <meta property="og:description" content="Sistemas Embarcados Bare-Metal (STM32), Robótica, IoT (ESP32/MQTT) e Sistemas Multi-Agentes." />
+  <title>Rodrigues Matheus</title>
+  <meta name="description" content="Rodrigues Matheus — Engenharia de Computação no IFPB, Sistemas Embarcados STM32, Robótica no Laboratório Hórus e Sistemas Multi-Agentes." />
+  <meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)" />
+  <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
+  <meta property="og:title" content="Rodrigues Matheus" />
+  <meta property="og:description" content="Sistemas Embarcados Bare-Metal, Robótica e Sistemas Multi-Agentes." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://rodriguesmath.github.io/" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:wght@400;500;600&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
   <link rel="stylesheet" href="styles.css" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <header class="site-header">
-    <div class="container header-bar">
-      <a class="brand mono" href="#topo" aria-label="Início — Rodrigues Matheus">
-        <span class="brand-mark" aria-hidden="true">■</span> RODRIGUESMATHEUS // 2026
-      </a>
-      <nav class="site-nav" aria-label="Navegação principal">
-        <a href="#atuacao">Atuação</a>
-        <a href="#projetos">Projetos</a>
-        <a href="#stack">Especificações</a>
-        <a href="#contato">Contato</a>
-      </nav>
-      <button id="theme-toggle" class="theme-btn mono" type="button" aria-label="Alternar tema claro/escuro" aria-pressed="false">
-        TEMA: CLARO
-      </button>
-    </div>
-  </header>
-
-  <main id="conteudo">
-    <!-- HERO -->
-    <section id="topo" class="hero">
-      <div class="container grid-12">
-        <div class="col-span-8 hero-main">
-          <p class="eyebrow mono">ENGENHARIA DE COMPUTAÇÃO · IFPB · CAMPINA GRANDE, PB</p>
+  <main id="conteudo" class="page">
+    <header class="intro">
+      <div class="intro-top">
+        <div>
           <h1>Rodrigues Matheus</h1>
-          <p class="lead">
-            Desenvolvedor e pesquisador focado em <strong>Sistemas Embarcados Bare-Metal (STM32)</strong>,
-            <strong>Robótica</strong> e <strong>Sistemas Multi-Agentes de IA</strong> — construindo firmware
-            determinístico no padrão ASSERT/IFPB e arquiteturas de orquestração enxutas.
-          </p>
-          <div class="hero-actions">
-            <a class="btn btn-primary mono" href="#projetos">VER ÍNDICE DE PROJETOS ↓</a>
-            <a class="btn btn-secondary mono" href="https://github.com/Rodriguesmath" target="_blank" rel="noopener noreferrer">GITHUB ↗</a>
-          </div>
+          <p class="subtitle">Engenharia de Computação · Campina Grande</p>
         </div>
-
-        <aside class="col-span-4 hero-meta mono" aria-label="Resumo operacional">
-          <div class="meta-row">
-            <span class="meta-key">ATUAÇÃO</span>
-            <span class="meta-val">Interagi Tecnologia</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-key">PESQUISA</span>
-            <span class="meta-val">Lab. Hórus (Robótica) &amp; LAPLIN-IFPB</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-key">ESPECIALIZAÇÃO</span>
-            <span class="meta-val">Virtus-CC (STM32 F4/F7/H7)</span>
-          </div>
-          <div class="meta-row">
-            <span class="meta-key">PADRÃO</span>
-            <span class="meta-val">ASSERT / IFPB Coding Style</span>
-          </div>
-        </aside>
+        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
+          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <circle cx="12" cy="12" r="4"></circle>
+            <path d="M12 2v2"></path><path d="M12 20v2"></path>
+            <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
+            <path d="M2 12h2"></path><path d="M20 12h2"></path>
+            <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
+          </svg>
+          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
+            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
+          </svg>
+        </button>
       </div>
-    </section>
 
-    <!-- ATUAÇÃO & PESQUISA -->
-    <section id="atuacao" class="section border-top">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono section-index">01 // ATUAÇÃO, PESQUISA &amp; FORMAÇÃO</span>
-          <h2>Contexto Técnico</h2>
+      <p class="bio">
+        Graduando em Engenharia de Computação pelo <span class="serif-em">IFPB</span>.
+        Atualmente desenvolvo software na <a href="#atuacao">Interagi Tecnologia</a> e atuo como
+        pesquisador no <strong>Laboratório Hórus de Robótica</strong> e no <strong>LAPLIN-IFPB</strong>.
+      </p>
+      <p class="bio">
+        Meu trabalho se divide entre firmware <em>bare-metal</em> em microcontroladores STM32 e ESP32,
+        protocolos de comunicação e sistemas multi-agentes com foco em orquestração enxuta e verificação determinística.
+      </p>
+    </header>
+
+    <section id="atuacao" class="block">
+      <h2>Agora</h2>
+      <div class="two-col">
+        <div>
+          <h3>Pesquisa &amp; Trabalho</h3>
+          <ul class="plain-list">
+            <li>Interagi Tecnologia — Desenvolvimento</li>
+            <li>Lab. Hórus — Pesquisa em Robótica</li>
+            <li>LAPLIN-IFPB — Pesquisa aplicada</li>
+            <li>Virtus-CC — Sistemas Embarcados</li>
+          </ul>
         </div>
-
-        <div class="grid-12 cards-3">
-          <article class="spec-box col-span-4">
-            <span class="mono box-tag">01 / ATUAÇÃO</span>
-            <h3>Interagi Tecnologia</h3>
-            <p>
-              Desenvolvimento de software, automação e integração de sistemas em produção, aplicando boas práticas de engenharia, controle de versão e entrega contínua.
-            </p>
-          </article>
-
-          <article class="spec-box col-span-4">
-            <span class="mono box-tag">02 / PESQUISA</span>
-            <h3>Lab. Hórus &amp; LAPLIN-IFPB</h3>
-            <p>
-              Pesquisa aplicada em <strong>Robótica</strong> no <strong>Laboratório Hórus</strong> e desenvolvimento de ferramentas inteligentes no <strong>LAPLIN-IFPB</strong>.
-            </p>
-          </article>
-
-          <article class="spec-box col-span-4">
-            <span class="mono box-tag">03 / EMBARCADOS</span>
-            <h3>Virtus-CC &amp; IFPB</h3>
-            <p>
-              Graduando em Engenharia de Computação (IFPB) e integrante da formação <strong>Virtus-CC</strong> em microcontroladores de 32 bits, DSP e ultra-baixo consumo.
-            </p>
-          </article>
+        <div>
+          <h3>Áreas de Foco</h3>
+          <ul class="plain-list">
+            <li>STM32 (F4, F7, H7) &amp; padrão ASSERT</li>
+            <li>ESP32, MQTT &amp; telemetria IoT</li>
+            <li>Sistemas Multi-Agentes &amp; Skills</li>
+            <li>SystemVerilog &amp; hardware digital</li>
+          </ul>
         </div>
       </div>
     </section>
 
-    <!-- ÍNDICE DE PROJETOS -->
-    <section id="projetos" class="section border-top">
-      <div class="container">
-        <div class="section-head section-head-row">
-          <div>
-            <span class="mono section-index">02 // ÍNDICE DE REPOSITÓRIOS</span>
-            <h2>Projetos Selecionados</h2>
-          </div>
-          <div class="filter-bar" role="group" aria-label="Filtrar projetos por categoria">
-            <button class="filter-btn mono active" type="button" data-filter="all" aria-pressed="true">TODOS (12)</button>
-            <button class="filter-btn mono" type="button" data-filter="agents" aria-pressed="false">MULTI-AGENTES</button>
-            <button class="filter-btn mono" type="button" data-filter="embedded" aria-pressed="false">STM32</button>
-            <button class="filter-btn mono" type="button" data-filter="iot" aria-pressed="false">ESP32 / MQTT</button>
-            <button class="filter-btn mono" type="button" data-filter="hdl" aria-pressed="false">HDL / FPGA</button>
-          </div>
-        </div>
-
-        <p id="filter-status" class="mono filter-status" aria-live="polite">Exibindo 12 projetos.</p>
-
-        <div class="project-table" role="list">
-          <div class="project-header mono" aria-hidden="true">
-            <span>ÍNDICE</span>
-            <span>PROJETO</span>
-            <span>DESCRIÇÃO TÉCNICA</span>
-            <span>STACK</span>
-            <span class="align-right">FONTE</span>
-          </div>
-
-          <a class="project-row" role="listitem" data-category="agents" href="https://github.com/Rodriguesmath/antigravity-flow" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">01 / MULTI-AGENT</span>
-            <strong class="cell-title">antigravity-flow</strong>
-            <span class="cell-desc">Orquestração em 3 níveis, frota Enterprise Multi-Agent, hooks determinísticos, Graphify e skills (Caveman, Ponytail).</span>
-            <span class="mono cell-stack">Python · Antigravity · MCP</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="agents" href="https://github.com/Rodriguesmath/volto-light-theme-skills" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">02 / AGENT SKILLS</span>
-            <strong class="cell-title">volto-light-theme-skills</strong>
-            <span class="cell-desc">Skills determinísticas (VLT, WCAG audit), linter zero-deps e 6/6 evals ao vivo para 6 agentes de código.</span>
-            <span class="mono cell-stack">Skills · Plone 6 · Evals</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="agents embedded" href="https://github.com/Rodriguesmath/Pedaleira-digital" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">03 / STM32 + SKILLS</span>
-            <strong class="cell-title">Pedaleira-digital</strong>
-            <span class="cell-desc">Áudio embarcado com suíte própria de .agents/skills (stm32-baremetal-qa, inter-mcu-protocol, dsp-algorithm-design).</span>
-            <span class="mono cell-stack">STM32 · DSP · Agent Skills</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/lab3-i2c-imu-oled" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">04 / AHRS + PFD</span>
-            <strong class="cell-title">lab3-i2c-imu-oled</strong>
-            <span class="cell-desc">Fusão sensorial em quaternion SO(3) (Mahony) para MPU-6050 + painel de voo vetorial no OLED SSD1306 a 400 kHz.</span>
-            <span class="mono cell-stack">STM32 F4/F7/H7 · I²C · C</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/projeto-final-vibracao" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">05 / LOW-POWER</span>
-            <strong class="cell-title">projeto-final-vibracao</strong>
-            <span class="cell-desc">Monitor preditivo ISO 10816 (RMS, Curtose, Crest Factor) com Stop Mode + RTC e autonomia calculada de 14,4 anos.</span>
-            <span class="mono cell-stack">STM32 · RTC · MPU-6050</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/stm32-trng-monte-carlo-pi" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">06 / TRNG + TELEMETRIA</span>
-            <strong class="cell-title">stm32-trng-monte-carlo-pi</strong>
-            <span class="cell-desc">Estimação de π via Monte Carlo com gerador aleatório em hardware (TRNG) no STM32H723 e dashboard em tempo real.</span>
-            <span class="mono cell-stack">STM32H723 · TRNG · Python</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/stm32f7-bsp" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">07 / BSP DRIVERS</span>
-            <strong class="cell-title">stm32f7-bsp</strong>
-            <span class="cell-desc">Camada Board Support Package desacoplada de alto nível para STM32F7 / NUCLEO-F767ZI.</span>
-            <span class="mono cell-stack">STM32F7 · BSP · C</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/lab1-gpio-nvic" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">08 / GPIO + EXTI</span>
-            <strong class="cell-title">lab1-gpio-nvic</strong>
-            <span class="cell-desc">Protocolo digital Open-Drain Half-Duplex (> 100 kbps) via DWT Cycle Counter, paridade par e handshake ACK/NACK.</span>
-            <span class="mono cell-stack">STM32 · EXTI · DWT</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/lab2-timer-uart" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">09 / PWM + UART</span>
-            <strong class="cell-title">lab2-timer-uart</strong>
-            <span class="cell-desc">Inversor senoidal via PWM de 50 kHz, LUT de 128 pontos, filtro RC passa-baixas (THD &lt; 0,5%) e ajuste por UART.</span>
-            <span class="mono cell-stack">TIM1 · TIM2 · USART1</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="embedded" href="https://github.com/Rodriguesmath/lab4-adc-dac-dma" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">10 / ADC + DAC + DMA</span>
-            <strong class="cell-title">lab4-adc-dac-dma</strong>
-            <span class="cell-desc">Digipot óptico Vactrol em malha fechada (AGC) com ADC/DAC 12-bit, atualização de LUT via UART DMA e RMSE.</span>
-            <span class="mono cell-stack">ADC · DAC · DMA</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="iot" href="https://github.com/Rodriguesmath/led-MQTT" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">11 / ESP32 + MQTT</span>
-            <strong class="cell-title">led-MQTT &amp; mqtt_example</strong>
-            <span class="cell-desc">Controle remoto de atuadores e publicação/assinatura de telemetria IoT via protocolo MQTT em ESP32.</span>
-            <span class="mono cell-stack">ESP32 · MQTT · C</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
-
-          <a class="project-row" role="listitem" data-category="hdl" href="https://github.com/Rodriguesmath/smart-lighting-system" target="_blank" rel="noopener noreferrer">
-            <span class="mono cell-id">12 / SYSTEMVERILOG</span>
-            <strong class="cell-title">smart-lighting-system</strong>
-            <span class="cell-desc">Sistema de iluminação inteligente com acionamento automático via sensor infravermelho e controle manual em HDL.</span>
-            <span class="mono cell-stack">SystemVerilog · FPGA</span>
-            <span class="mono cell-link align-right">GITHUB ↗</span>
-          </a>
+    <section id="projetos" class="block">
+      <div class="block-head">
+        <h2>Projetos</h2>
+        <div class="filters" role="group" aria-label="Filtrar projetos">
+          <button class="filter-link active" type="button" data-filter="all" aria-pressed="true">Todos</button>
+          <button class="filter-link" type="button" data-filter="agents" aria-pressed="false">Agentes</button>
+          <button class="filter-link" type="button" data-filter="embedded" aria-pressed="false">Embarcados</button>
+          <button class="filter-link" type="button" data-filter="iot" aria-pressed="false">IoT</button>
         </div>
       </div>
+
+      <ul class="projects">
+        <li data-cat="agents">
+          <a href="https://github.com/Rodriguesmath/antigravity-flow" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">antigravity-flow</span>
+            <span class="p-desc">Orquestração multi-agente em 3 níveis, hooks e protocolo Pass-by-Reference</span>
+            <span class="p-tag">Agentes</span>
+          </a>
+        </li>
+        <li data-cat="agents">
+          <a href="https://github.com/Rodriguesmath/volto-light-theme-skills" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">volto-light-theme-skills</span>
+            <span class="p-desc">Skills para Plone 6 / Volto e acessibilidade WCAG com suíte de evals</span>
+            <span class="p-tag">Skills</span>
+          </a>
+        </li>
+        <li data-cat="agents embedded">
+          <a href="https://github.com/Rodriguesmath/Pedaleira-digital" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">Pedaleira-digital</span>
+            <span class="p-desc">Áudio embarcado em STM32 com skills próprias de QA, DSP e protocolo</span>
+            <span class="p-tag">STM32 · Skills</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/lab3-i2c-imu-oled" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">lab3-i2c-imu-oled</span>
+            <span class="p-desc">AHRS e painel de voo vetorial em quaternion SO(3) com MPU-6050 e OLED</span>
+            <span class="p-tag">STM32 · I²C</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/projeto-final-vibracao" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">projeto-final-vibracao</span>
+            <span class="p-desc">Monitor ISO 10816 com Stop Mode + RTC e autonomia estimada de 14,4 anos</span>
+            <span class="p-tag">Low-Power</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/stm32-trng-monte-carlo-pi" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">stm32-trng-monte-carlo-pi</span>
+            <span class="p-desc">Estimação de π via TRNG em hardware no STM32H723 com telemetria</span>
+            <span class="p-tag">STM32H7</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/lab1-gpio-nvic" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">lab1-gpio-nvic</span>
+            <span class="p-desc">Protocolo Open-Drain via GPIO e EXTI acima de 100 kbps com paridade e ACK</span>
+            <span class="p-tag">GPIO · EXTI</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/lab2-timer-uart" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">lab2-timer-uart</span>
+            <span class="p-desc">Inversor senoidal PWM a 50 kHz com filtro RC e ajuste dinâmico por UART</span>
+            <span class="p-tag">PWM · UART</span>
+          </a>
+        </li>
+        <li data-cat="embedded">
+          <a href="https://github.com/Rodriguesmath/lab4-adc-dac-dma" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">lab4-adc-dac-dma</span>
+            <span class="p-desc">Digipot óptico Vactrol em malha fechada com ADC, DAC e DMA</span>
+            <span class="p-tag">ADC · DMA</span>
+          </a>
+        </li>
+        <li data-cat="iot">
+          <a href="https://github.com/Rodriguesmath/led-MQTT" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">led-MQTT</span>
+            <span class="p-desc">Atuação remota e telemetria em ESP32 utilizando protocolo MQTT</span>
+            <span class="p-tag">ESP32 · MQTT</span>
+          </a>
+        </li>
+        <li data-cat="iot">
+          <a href="https://github.com/Rodriguesmath/smart-lighting-system" target="_blank" rel="noopener noreferrer">
+            <span class="p-name">smart-lighting-system</span>
+            <span class="p-desc">Sistema de iluminação automática com sensor IR descrito em SystemVerilog</span>
+            <span class="p-tag">HDL · FPGA</span>
+          </a>
+        </li>
+      </ul>
+
+      <p class="more-link">
+        Todos os repositórios disponíveis no <a href="https://github.com/Rodriguesmath?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
+      </p>
     </section>
 
-    <!-- ESPECIFICAÇÕES TÉCNICAS -->
-    <section id="stack" class="section border-top">
-      <div class="container">
-        <div class="section-head">
-          <span class="mono section-index">03 // ESPECIFICAÇÕES TÉCNICAS</span>
-          <h2>Stack &amp; Padrões</h2>
-        </div>
-
-        <div class="grid-12 spec-grid">
-          <div class="col-span-3 spec-col">
-            <h3 class="mono">EMBARCADOS &amp; ROBÓTICA</h3>
-            <ul>
-              <li>C / C++ Bare-Metal</li>
-              <li>STM32 (F4, F7, H7) &amp; ESP32</li>
-              <li>FreeRTOS &amp; CMSIS-RTOS v2</li>
-              <li>I²C, SPI, UART, PWM, ADC/DAC, DMA</li>
-              <li>SystemVerilog (HDL / FPGA)</li>
-            </ul>
-          </div>
-
-          <div class="col-span-3 spec-col">
-            <h3 class="mono">MULTI-AGENTES &amp; IA</h3>
-            <ul>
-              <li>Orquestração Hierárquica</li>
-              <li>Google Antigravity &amp; Gemini CLI</li>
-              <li>Agent Skills &amp; Evals Determinísticos</li>
-              <li>Protocolos Token-Friendly &amp; MCP</li>
-              <li>Graphify (Knowledge Graphs)</li>
-            </ul>
-          </div>
-
-          <div class="col-span-3 spec-col">
-            <h3 class="mono">SOFTWARE &amp; IOT</h3>
-            <ul>
-              <li>Python &amp; Automação</li>
-              <li>TypeScript &amp; JavaScript</li>
-              <li>Java (Design Patterns)</li>
-              <li>Plone 6 / Volto (React)</li>
-              <li>MQTT &amp; Telemetria</li>
-            </ul>
-          </div>
-
-          <div class="col-span-3 spec-col">
-            <h3 class="mono">ENGENHARIA &amp; FERRAMENTAS</h3>
-            <ul>
-              <li>Padrão ASSERT / IFPB</li>
-              <li>Linux, Git &amp; GitHub Actions</li>
-              <li>Docker &amp; Containers</li>
-              <li>STM32CubeIDE, OpenOCD &amp; GDB</li>
-              <li>Testes BDD &amp; Unitários em Host</li>
-            </ul>
-          </div>
-        </div>
+    <footer id="contato" class="footer">
+      <div class="links-row">
+        <a href="mailto:rodriguesmateus.rm@gmail.com">Email</a>
+        <a href="https://github.com/Rodriguesmath" target="_blank" rel="noopener noreferrer">GitHub</a>
+        <a href="https://www.linkedin.com/in/rodrigues-matheus-lima-ba4572220/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+        <a href="https://www.instagram.com/__rodriguesmath__/" target="_blank" rel="noopener noreferrer">Instagram</a>
       </div>
-    </section>
-
-    <!-- CONTATO -->
-    <section id="contato" class="section border-top">
-      <div class="container grid-12">
-        <div class="col-span-7">
-          <span class="mono section-index">04 // CONTATO</span>
-          <h2>Canais Diretos</h2>
-          <p class="contact-text">
-            Aberto a colaborações técnicas em sistemas embarcados, robótica, automação e arquiteturas multi-agentes.
-          </p>
-        </div>
-        <div class="col-span-5 contact-links mono">
-          <div class="contact-item">
-            <span>EMAIL</span>
-            <div class="contact-actions">
-              <a href="mailto:rodriguesmateus.rm@gmail.com">rodriguesmateus.rm@gmail.com</a>
-              <button id="copy-email" class="copy-btn mono" type="button">COPIAR</button>
-            </div>
-          </div>
-          <div class="contact-item">
-            <span>GITHUB</span>
-            <a href="https://github.com/Rodriguesmath" target="_blank" rel="noopener noreferrer">github.com/Rodriguesmath ↗</a>
-          </div>
-          <div class="contact-item">
-            <span>LINKEDIN</span>
-            <a href="https://www.linkedin.com/in/rodrigues-matheus-lima-ba4572220/" target="_blank" rel="noopener noreferrer">linkedin.com/in/rodrigues-matheus ↗</a>
-          </div>
-          <div class="contact-item">
-            <span>INSTAGRAM</span>
-            <a href="https://www.instagram.com/__rodriguesmath__/" target="_blank" rel="noopener noreferrer">@__rodriguesmath__ ↗</a>
-          </div>
-          <p id="copy-feedback" class="copy-feedback" aria-live="polite"></p>
-        </div>
-      </div>
-    </section>
+      <span class="footer-note">Rodrigues Matheus · 2026</span>
+    </footer>
   </main>
-
-  <footer class="site-footer border-top">
-    <div class="container footer-bar mono">
-      <span>RODRIGUES MATHEUS · IFPB · 2026</span>
-      <span>HTML5 / CSS3 / JS PURO · ZERO BLOAT</span>
-    </div>
-  </footer>
 
   <script src="main.js" defer></script>
 </body>
