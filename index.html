@@ -3,185 +3,252 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Rodrigues Matheus</title>
-  <meta name="description" content="Rodrigues Matheus — Engenharia de Computação no IFPB, Sistemas Embarcados STM32, Robótica no Laboratório Hórus e Sistemas Multi-Agentes." />
-  <meta name="theme-color" content="#fcfcfa" media="(prefers-color-scheme: light)" />
-  <meta name="theme-color" content="#111110" media="(prefers-color-scheme: dark)" />
-  <meta property="og:title" content="Rodrigues Matheus" />
-  <meta property="og:description" content="Sistemas Embarcados Bare-Metal, Robótica e Sistemas Multi-Agentes." />
-  <meta property="og:type" content="website" />
-  <meta property="og:url" content="https://rodriguesmath.github.io/" />
+  <title>rodrigues@ifpb:~/portfolio</title>
+  <meta name="description" content="Portfólio de Rodrigues Matheus — Sistemas Embarcados STM32, Robótica (Lab. Hórus), Interagi Tecnologia e Sistemas Multi-Agentes." />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Newsreader:ital,opsz,wght@1,6..72,400&family=JetBrains+Mono:wght@400&display=swap" rel="stylesheet" />
-  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="styles.css?v=3" />
 </head>
 <body>
   <a class="skip-link" href="#conteudo">Pular para o conteúdo</a>
 
-  <main id="conteudo" class="page">
-    <header class="intro">
-      <div class="intro-top">
-        <div>
-          <h1>Rodrigues Matheus</h1>
-          <p class="subtitle">Engenharia de Computação · Campina Grande</p>
+  <header class="topbar">
+    <div class="container topbar-inner">
+      <a class="prompt-brand" href="#topo" aria-label="Início">
+        <span class="c-green">rodrigues</span><span class="c-muted">@</span><span class="c-blue">ifpb</span><span class="c-muted">:~</span><span class="c-accent">$</span>
+      </a>
+      <nav class="topnav" aria-label="Seções">
+        <a href="#neofetch">whoami</a>
+        <a href="#projetos">projects</a>
+        <a href="#stack">stack.toml</a>
+        <a href="#contato">contact</a>
+      </nav>
+      <button id="theme-toggle" class="cmd-btn" type="button" aria-label="Alternar tema escuro e claro" aria-pressed="true">
+        theme: dark
+      </button>
+    </div>
+  </header>
+
+  <main id="conteudo" class="container main-wrap">
+    <!-- TERMINAL WINDOW: NEOFETCH + INTERACTIVE SHELL -->
+    <section id="topo" class="term-window" aria-label="Terminal interativo">
+      <div class="term-titlebar">
+        <div class="term-dots" aria-hidden="true">
+          <span class="dot dot-r"></span>
+          <span class="dot dot-y"></span>
+          <span class="dot dot-g"></span>
         </div>
-        <button id="theme-toggle" class="icon-btn" type="button" aria-label="Alternar tema claro e escuro" aria-pressed="false">
-          <svg class="icon-sun" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <circle cx="12" cy="12" r="4"></circle>
-            <path d="M12 2v2"></path><path d="M12 20v2"></path>
-            <path d="m4.93 4.93 1.41 1.41"></path><path d="m17.66 17.66 1.41 1.41"></path>
-            <path d="M2 12h2"></path><path d="M20 12h2"></path>
-            <path d="m6.34 17.66-1.41 1.41"></path><path d="m19.07 4.93-1.41 1.41"></path>
-          </svg>
-          <svg class="icon-moon" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.75" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true">
-            <path d="M12 3a6 6 0 0 0 9 9 9 9 0 1 1-9-9Z"></path>
-          </svg>
-        </button>
+        <span class="term-title">zsh — rodrigues@horus-ifpb: ~/portfolio</span>
+        <span class="term-dim">UTF-8</span>
       </div>
 
-      <p class="bio">
-        Graduando em Engenharia de Computação pelo <span class="serif-em">IFPB</span>.
-        Atualmente desenvolvo software na <a href="#atuacao">Interagi Tecnologia</a> e atuo como
-        pesquisador no <strong>Laboratório Hórus de Robótica</strong> e no <strong>LAPLIN-IFPB</strong>.
-      </p>
-      <p class="bio">
-        Meu trabalho se divide entre firmware <em>bare-metal</em> em microcontroladores STM32 e ESP32,
-        protocolos de comunicação e sistemas multi-agentes com foco em orquestração enxuta e verificação determinística.
-      </p>
-    </header>
-
-    <section id="atuacao" class="block">
-      <h2>Agora</h2>
-      <div class="two-col">
-        <div>
-          <h3>Pesquisa &amp; Trabalho</h3>
-          <ul class="plain-list">
-            <li>Interagi Tecnologia — Desenvolvimento</li>
-            <li>Lab. Hórus — Pesquisa em Robótica</li>
-            <li>LAPLIN-IFPB — Pesquisa aplicada</li>
-            <li>Virtus-CC — Sistemas Embarcados</li>
-          </ul>
+      <div class="term-body">
+        <div class="cmd-line">
+          <span class="c-green">➜</span> <span class="c-blue">~</span> <span class="c-cmd">neofetch --profile</span>
         </div>
-        <div>
-          <h3>Áreas de Foco</h3>
-          <ul class="plain-list">
-            <li>STM32 (F4, F7, H7) &amp; padrão ASSERT</li>
-            <li>ESP32, MQTT &amp; telemetria IoT</li>
-            <li>Sistemas Multi-Agentes &amp; Skills</li>
-            <li>SystemVerilog &amp; hardware digital</li>
-          </ul>
+
+        <div id="neofetch" class="neofetch-grid">
+          <div class="nf-avatar-col">
+            <img
+              class="nf-avatar"
+              src="https://github.com/Rodriguesmath.png"
+              alt="Foto de perfil de Rodrigues Matheus"
+              width="148"
+              height="148"
+            />
+            <div class="nf-palette" aria-hidden="true">
+              <span style="background:#f7768e"></span>
+              <span style="background:#ff9e64"></span>
+              <span style="background:#e0af68"></span>
+              <span style="background:#9ece6a"></span>
+              <span style="background:#7aa2f7"></span>
+              <span style="background:#bb9af7"></span>
+              <span style="background:#7dcfff"></span>
+            </div>
+          </div>
+
+          <div class="nf-info">
+            <h1 class="nf-user"><span class="c-green">rodrigues</span><span class="c-muted">@</span><span class="c-blue">horus-ifpb</span></h1>
+            <div class="nf-sep" aria-hidden="true">──────────────────────────────</div>
+            <dl class="nf-list">
+              <div><dt>Name</dt><dd>Rodrigues Matheus</dd></div>
+              <div><dt>Degree</dt><dd>Engenharia de Computação · IFPB</dd></div>
+              <div><dt>Work</dt><dd>Interagi Tecnologia</dd></div>
+              <div><dt>Research</dt><dd>Laboratório Hórus (Robótica) &amp; LAPLIN-IFPB</dd></div>
+              <div><dt>Embedded</dt><dd>STM32 (F4/F7/H7) · ESP32 · Virtus-CC · ASSERT</dd></div>
+              <div><dt>AI / Agents</dt><dd>Multi-Agent Systems · Antigravity · MCP · Skills</dd></div>
+              <div><dt>OS / Shell</dt><dd>Linux · zsh · Neovim / VS Code</dd></div>
+            </dl>
+          </div>
+        </div>
+
+        <!-- INTERACTIVE PROMPT -->
+        <div class="shell-section">
+          <div class="quick-cmds" role="group" aria-label="Comandos rápidos">
+            <span class="c-muted">Try:</span>
+            <button class="chip-cmd" type="button" data-cmd="help">help</button>
+            <button class="chip-cmd" type="button" data-cmd="whoami">whoami</button>
+            <button class="chip-cmd" type="button" data-cmd="ls projects">ls projects</button>
+            <button class="chip-cmd" type="button" data-cmd="cat stack">cat stack</button>
+            <button class="chip-cmd" type="button" data-cmd="clear">clear</button>
+          </div>
+
+          <div id="shell-output" class="shell-output" aria-live="polite"></div>
+
+          <form id="shell-form" class="shell-form" autocomplete="off">
+            <label for="shell-input" class="sr-only">Digite um comando do terminal (ex: help)</label>
+            <span class="c-green" aria-hidden="true">➜</span>
+            <span class="c-blue" aria-hidden="true">~</span>
+            <input
+              id="shell-input"
+              name="cmd"
+              type="text"
+              placeholder="digite 'help' e pressione Enter…"
+              spellcheck="false"
+              autocomplete="off"
+            />
+          </form>
         </div>
       </div>
     </section>
 
-    <section id="projetos" class="block">
-      <div class="block-head">
-        <h2>Projetos</h2>
-        <div class="filters" role="group" aria-label="Filtrar projetos">
-          <button class="filter-link active" type="button" data-filter="all" aria-pressed="true">Todos</button>
-          <button class="filter-link" type="button" data-filter="agents" aria-pressed="false">Agentes</button>
-          <button class="filter-link" type="button" data-filter="embedded" aria-pressed="false">Embarcados</button>
-          <button class="filter-link" type="button" data-filter="iot" aria-pressed="false">IoT</button>
+    <!-- PROJECTS: LS -LA -->
+    <section id="projetos" class="section">
+      <div class="section-bar">
+        <h2><span class="c-green">$</span> ls -la ~/projects</h2>
+        <div class="filter-group" role="group" aria-label="Filtrar projetos">
+          <button class="filter-btn active" type="button" data-filter="all" aria-pressed="true">all (11)</button>
+          <button class="filter-btn" type="button" data-filter="agents" aria-pressed="false">agents</button>
+          <button class="filter-btn" type="button" data-filter="embedded" aria-pressed="false">stm32</button>
+          <button class="filter-btn" type="button" data-filter="iot" aria-pressed="false">esp32/hdl</button>
         </div>
       </div>
 
-      <ul class="projects">
-        <li data-cat="agents">
-          <a href="https://github.com/Rodriguesmath/antigravity-flow" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">antigravity-flow</span>
-            <span class="p-desc">Orquestração multi-agente em 3 níveis, hooks e protocolo Pass-by-Reference</span>
-            <span class="p-tag">Agentes</span>
-          </a>
-        </li>
-        <li data-cat="agents">
-          <a href="https://github.com/Rodriguesmath/volto-light-theme-skills" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">volto-light-theme-skills</span>
-            <span class="p-desc">Skills para Plone 6 / Volto e acessibilidade WCAG com suíte de evals</span>
-            <span class="p-tag">Skills</span>
-          </a>
-        </li>
-        <li data-cat="agents embedded">
-          <a href="https://github.com/Rodriguesmath/Pedaleira-digital" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">Pedaleira-digital</span>
-            <span class="p-desc">Áudio embarcado em STM32 com skills próprias de QA, DSP e protocolo</span>
-            <span class="p-tag">STM32 · Skills</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/lab3-i2c-imu-oled" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">lab3-i2c-imu-oled</span>
-            <span class="p-desc">AHRS e painel de voo vetorial em quaternion SO(3) com MPU-6050 e OLED</span>
-            <span class="p-tag">STM32 · I²C</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/projeto-final-vibracao" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">projeto-final-vibracao</span>
-            <span class="p-desc">Monitor ISO 10816 com Stop Mode + RTC e autonomia estimada de 14,4 anos</span>
-            <span class="p-tag">Low-Power</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/stm32-trng-monte-carlo-pi" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">stm32-trng-monte-carlo-pi</span>
-            <span class="p-desc">Estimação de π via TRNG em hardware no STM32H723 com telemetria</span>
-            <span class="p-tag">STM32H7</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/lab1-gpio-nvic" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">lab1-gpio-nvic</span>
-            <span class="p-desc">Protocolo Open-Drain via GPIO e EXTI acima de 100 kbps com paridade e ACK</span>
-            <span class="p-tag">GPIO · EXTI</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/lab2-timer-uart" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">lab2-timer-uart</span>
-            <span class="p-desc">Inversor senoidal PWM a 50 kHz com filtro RC e ajuste dinâmico por UART</span>
-            <span class="p-tag">PWM · UART</span>
-          </a>
-        </li>
-        <li data-cat="embedded">
-          <a href="https://github.com/Rodriguesmath/lab4-adc-dac-dma" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">lab4-adc-dac-dma</span>
-            <span class="p-desc">Digipot óptico Vactrol em malha fechada com ADC, DAC e DMA</span>
-            <span class="p-tag">ADC · DMA</span>
-          </a>
-        </li>
-        <li data-cat="iot">
-          <a href="https://github.com/Rodriguesmath/led-MQTT" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">led-MQTT</span>
-            <span class="p-desc">Atuação remota e telemetria em ESP32 utilizando protocolo MQTT</span>
-            <span class="p-tag">ESP32 · MQTT</span>
-          </a>
-        </li>
-        <li data-cat="iot">
-          <a href="https://github.com/Rodriguesmath/smart-lighting-system" target="_blank" rel="noopener noreferrer">
-            <span class="p-name">smart-lighting-system</span>
-            <span class="p-desc">Sistema de iluminação automática com sensor IR descrito em SystemVerilog</span>
-            <span class="p-tag">HDL · FPGA</span>
-          </a>
-        </li>
-      </ul>
+      <div class="term-table" role="list">
+        <a class="term-row" role="listitem" data-cat="agents" href="https://github.com/Rodriguesmath/antigravity-flow" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-purple">[agents]</span>
+          <strong class="col-name c-blue">antigravity-flow</strong>
+          <span class="col-desc">Orquestração multi-agente em 3 níveis, hooks determinísticos, Graphify e skills</span>
+          <span class="col-go c-green">↗</span>
+        </a>
 
-      <p class="more-link">
-        Todos os repositórios disponíveis no <a href="https://github.com/Rodriguesmath?tab=repositories" target="_blank" rel="noopener noreferrer">GitHub ↗</a>
-      </p>
+        <a class="term-row" role="listitem" data-cat="agents" href="https://github.com/Rodriguesmath/volto-light-theme-skills" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-purple">[skills]</span>
+          <strong class="col-name c-blue">volto-light-theme-skills</strong>
+          <span class="col-desc">Skills determinísticas (Plone 6/Volto, WCAG) e evals ao vivo para 6 agentes</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="agents embedded" href="https://github.com/Rodriguesmath/Pedaleira-digital" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-cyan">[stm32+ai]</span>
+          <strong class="col-name c-blue">Pedaleira-digital</strong>
+          <span class="col-desc">Áudio embarcado com .agents/skills (stm32-baremetal-qa, dsp-algorithm-design)</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/lab3-i2c-imu-oled" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[stm32]</span>
+          <strong class="col-name c-blue">lab3-i2c-imu-oled</strong>
+          <span class="col-desc">AHRS &amp; Painel de Voo (PFD) em quaternion SO(3) com MPU-6050 + OLED 400 kHz</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/projeto-final-vibracao" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[low-pwr]</span>
+          <strong class="col-name c-blue">projeto-final-vibracao</strong>
+          <span class="col-desc">Monitor ISO 10816 (Curtose, RMS) com Stop Mode + RTC e autonomia de 14,4 anos</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/stm32-trng-monte-carlo-pi" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[stm32h7]</span>
+          <strong class="col-name c-blue">stm32-trng-monte-carlo-pi</strong>
+          <span class="col-desc">Estimação de π via TRNG em hardware no STM32H723 com dashboard em tempo real</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/lab1-gpio-nvic" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[gpio]</span>
+          <strong class="col-name c-blue">lab1-gpio-nvic</strong>
+          <span class="col-desc">Protocolo Open-Drain via GPIO + EXTI (&gt; 100 kbps) com DWT, paridade par e ACK</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/lab2-timer-uart" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[pwm]</span>
+          <strong class="col-name c-blue">lab2-timer-uart</strong>
+          <span class="col-desc">Inversor senoidal PWM 50 kHz, LUT 128 pontos, filtro RC e ajuste por UART</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="embedded" href="https://github.com/Rodriguesmath/lab4-adc-dac-dma" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-amber">[adc/dma]</span>
+          <strong class="col-name c-blue">lab4-adc-dac-dma</strong>
+          <span class="col-desc">Digipot óptico Vactrol em malha fechada (AGC) com ADC/DAC 12-bit e DMA</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="iot" href="https://github.com/Rodriguesmath/led-MQTT" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-green">[esp32]</span>
+          <strong class="col-name c-blue">led-MQTT</strong>
+          <span class="col-desc">Controle remoto e telemetria IoT em ESP32 utilizando protocolo MQTT</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+
+        <a class="term-row" role="listitem" data-cat="iot" href="https://github.com/Rodriguesmath/smart-lighting-system" target="_blank" rel="noopener noreferrer">
+          <span class="col-perm c-muted">drwxr-xr-x</span>
+          <span class="col-tag c-green">[hdl]</span>
+          <strong class="col-name c-blue">smart-lighting-system</strong>
+          <span class="col-desc">Sistema de iluminação inteligente com sensor IR descrito em SystemVerilog</span>
+          <span class="col-go c-green">↗</span>
+        </a>
+      </div>
     </section>
 
+    <!-- STACK.TOML -->
+    <section id="stack" class="section">
+      <div class="section-bar">
+        <h2><span class="c-green">$</span> cat ~/.config/stack.toml</h2>
+      </div>
+
+      <pre class="toml-box"><code><span class="c-purple">[embedded_and_robotics]</span>
+<span class="c-blue">mcus</span>       = [<span class="c-green">"STM32F4"</span>, <span class="c-green">"STM32F7"</span>, <span class="c-green">"STM32H7"</span>, <span class="c-green">"ESP32"</span>]
+<span class="c-blue">protocols</span>  = [<span class="c-green">"I2C"</span>, <span class="c-green">"SPI"</span>, <span class="c-green">"UART"</span>, <span class="c-green">"MQTT"</span>, <span class="c-green">"PWM/DMA"</span>]
+<span class="c-blue">hdl_rtos</span>   = [<span class="c-green">"FreeRTOS"</span>, <span class="c-green">"SystemVerilog"</span>, <span class="c-green">"Padrão ASSERT/IFPB"</span>]
+
+<span class="c-purple">[ai_and_multiagent]</span>
+<span class="c-blue">frameworks</span> = [<span class="c-green">"Google Antigravity"</span>, <span class="c-green">"Gemini CLI"</span>, <span class="c-green">"MCP"</span>]
+<span class="c-blue">patterns</span>   = [<span class="c-green">"Model Routing"</span>, <span class="c-green">"Agent Skills"</span>, <span class="c-green">"Deterministic Evals"</span>, <span class="c-green">"Graphify"</span>]
+
+<span class="c-purple">[software_and_tools]</span>
+<span class="c-blue">languages</span>  = [<span class="c-green">"C"</span>, <span class="c-green">"C++"</span>, <span class="c-green">"Python"</span>, <span class="c-green">"TypeScript"</span>, <span class="c-green">"Java"</span>]
+<span class="c-blue">infra</span>      = [<span class="c-green">"Linux"</span>, <span class="c-green">"Docker"</span>, <span class="c-green">"Git"</span>, <span class="c-green">"OpenOCD"</span>, <span class="c-green">"STM32CubeIDE"</span>]</code></pre>
+    </section>
+
+    <!-- CONTACT -->
     <footer id="contato" class="footer">
-      <div class="links-row">
-        <a href="mailto:rodriguesmateus.rm@gmail.com">Email</a>
-        <a href="https://github.com/Rodriguesmath" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/rodrigues-matheus-lima-ba4572220/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-        <a href="https://www.instagram.com/__rodriguesmath__/" target="_blank" rel="noopener noreferrer">Instagram</a>
+      <div class="footer-cmd"><span class="c-green">$</span> ping rodriguesmath</div>
+      <div class="footer-links">
+        <a href="mailto:rodriguesmateus.rm@gmail.com">email</a>
+        <a href="https://github.com/Rodriguesmath" target="_blank" rel="noopener noreferrer">github</a>
+        <a href="https://www.linkedin.com/in/rodrigues-matheus-lima-ba4572220/" target="_blank" rel="noopener noreferrer">linkedin</a>
+        <a href="https://www.instagram.com/__rodriguesmath__/" target="_blank" rel="noopener noreferrer">instagram</a>
       </div>
-      <span class="footer-note">Rodrigues Matheus · 2026</span>
+      <span class="c-muted">exit 0 · 2026</span>
     </footer>
   </main>
 
-  <script src="main.js" defer></script>
+  <script src="main.js?v=3" defer></script>
 </body>
 </html>
